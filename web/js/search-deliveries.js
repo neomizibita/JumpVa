@@ -6,7 +6,7 @@
         $scope.logedUser = logedUser;
 
         $scope.cancel = function () {
-          $uibModalInstance.dismiss('cancel');
+            $uibModalInstance.dismiss('cancel');
         };
     });
 })();

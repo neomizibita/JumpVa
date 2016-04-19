@@ -26,8 +26,25 @@
                 }
             });
         };
+
     });
 
+    app.controller("CreateDeliveriesController", function($scope, $uibModal,logedUser){
+        var CreateDeliveryCtrl = this;
+        CreateDeliveryCtrl.logedUser = logedUser;
+
+        CreateDeliveryCtrl.createDeliveries = function(){
+            $uibModal.open({
+                templateUrl: 'includes/create-deliveries.html',
+                controller: 'ModalCreateDeliveriesController',
+                resolve: {
+                    logedUser: function(){
+                        return CreateDeliveryCtrl.logedUser;
+                    }
+                }
+            });
+        }
+    });
 
     app.controller("UserDataController", function($scope,$location, logedUser){
 

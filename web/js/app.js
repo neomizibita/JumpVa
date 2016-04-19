@@ -2,7 +2,7 @@
 
     var app = angular.module('jumpva', ['ngRoute','ui.bootstrap','ngAnimate',
     'main', 'toolbar','mainContent', 'login', 'signin','unassigned-delivery',
-    'completed-delivery','search-deliveries' ]);
+    'completed-delivery','search-deliveries', 'create-deliveries' ]);
 
     app.config(['$routeProvider',
         function($routeProvider) {

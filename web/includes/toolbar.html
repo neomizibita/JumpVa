@@ -15,10 +15,10 @@
             <ul class="nav navbar-nav navbar-right">
 
                 <li>
-                    <!-- Boton para realizar nuevas busquedas de envios. (solo para transportistas)-->
-                    <a ng-controller="NewDeliveryController as newDeliveryCtrl"
-                        ng-hide="newDeliveryCtrl.logedUser.carrier"
-                        ng-click="newDeliveryCtrl.searchDeliveries()"
+                    <!-- Boton para realizar nuevos envios. (solo para clientes)-->
+                    <a ng-controller="CreateDeliveriesController as CreateDeliveryCtrl"
+                        ng-hide="CreateDeliveryCtrl.logedUser.carrier"
+                        ng-click="CreateDeliveryCtrl.createDeliveries()"
                         role="button">Crear Envío</a>
                 </li>
 
