@@ -1,6 +1,44 @@
 <div class="modal-body">
 
-    <h1>Crear Envios</h1>
+    <h1>Crear Envio</h1>
+    <fieldset class="form-group">
+        <div class = 'row'>
+            <div class = 'col-lg-6'>
+                <h4>Origen</h4>
+                <input  class="form-control" type="text" placeholder="Localizacion"/>
+                <h4>Fecha recogida</h4>
+                <div class="input-group date" data-provide="datepicker">
+                    <input type="text" class="form-control"/>
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-th"></span>
+                    </div>
+
+                </div>
+            </div>
+            <div class = 'col-lg-6'>
+                <h4>Destino</h4>
+                <input  class="form-control" type="text" placeholder="Localizacion"/>
+                <h4>Fecha entrega</h4>
+            </div>
+        </div>
+        <h4>Dimensiones</h4>
+        <h4>Peso</h4>
+        <h4>Tipo no se que</h4>
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Carga
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a href="#">Paquetes</a></li>
+              <li><a href="#">Fluidos</a></li>
+              <li><a href="#">Animales</a></li>
+              <li><a href="#">Vehiculos</a></li>
+              <li><a href="#">bulk??</a></li>
+              <li><a href="#">Check me out?</a></li>
+            </ul>
+        </div>
+    </fieldset>
 </div>
 
 <div class="modal-footer">
